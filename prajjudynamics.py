@@ -20,3 +20,8 @@ def RH(spec_hum,T,pre):
 
 	RH = 100*(vp / vs)
 	return (RH)
+
+# function for converting UTC to Local Time
+def LST(utc,longitude):
+	lst = utc+(longitude/15)
+	return (lst)
